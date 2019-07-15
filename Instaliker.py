@@ -5,7 +5,7 @@ from getpass import getpass
 from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
 
 
-class TwitterBot:
+class InstaBot:
     def __init__(self,username,password):
 
         self.username = username
@@ -68,7 +68,7 @@ print('*************************************************************************
 
 user = input("Enter your Username: ")
 passw = getpass("Enter your Password: ")
-ed = TwitterBot(user,passw)
+ed = InstaBot(user,passw)
 
 ed.login()
 ed.like_upload()
